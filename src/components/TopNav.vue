@@ -28,10 +28,12 @@ export default {
   background: pink;
   display: flex;
   padding: 16px;
-  position: relative;
   z-index: 10;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
 
   > .logo {
     max-width: 6em;
