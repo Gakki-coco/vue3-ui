@@ -19,7 +19,9 @@
           </li>
         </ol>
       </aside>
-      <main>主内容</main>
+      <main>
+        <router-view/>
+      </main>
     </div>
   </div>
 </template>
@@ -41,10 +43,7 @@ export default {
 aside {
   background: lightblue;
   width: 150px;
-  padding: 70px 16px 16px;
-  position: fixed;
-  top: 0;
-  left: 0;
+  padding: 16px;
 
   > h2 {
     margin-bottom: 4px;
