@@ -1,11 +1,11 @@
 <template>
   <div class="top-nav">
-    <div class="logo" @click="toggleAside">LOGO</div>
+    <div class="logo">LOGO</div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <span class="toggle-icon"></span>
+    <span class="toggle-icon" @click="toggleAside"></span>
   </div>
 </template>
 
@@ -49,7 +49,7 @@ export default {
   }
 
   > .toggle-icon {
-    display: inline-block;
+    display: none;
     width: 24px;
     height: 24px;
     background: skyblue;
@@ -63,8 +63,12 @@ export default {
     > .menu {
       display: none;
     }
+
     > .logo {
       margin: 0 auto;
+    }
+    > .toggle-icon {
+      display: inline-block;
     }
   }
 }
