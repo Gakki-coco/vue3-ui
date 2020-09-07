@@ -42,6 +42,12 @@
       <Button theme="text" level="danger">危险文字按钮</Button>
     </div>
   </div>
+  <h2>示例四</h2>
+  <div class="section">
+    <Button theme="link" disabled>禁用链接按钮</Button>
+    <Button disabled>禁用按钮</Button>
+    <Button theme="text" disabled>禁用按钮</Button>
+  </div>
 </template>
 
 <script lang="ts">
